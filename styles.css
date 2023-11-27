@@ -12,6 +12,8 @@ body {
     padding-top: 0;
     padding-left: 0;
     width: 40%;
+    min-width: 150px;
+    max-width: 200px;
     background-image: url(./images/cobblestonestreet.jpg);
     background-size: cover;
     height:100vh;
@@ -42,12 +44,12 @@ a {
 }
 
 .sideCredit{
-    font-size: 10px;
+    font-size: 8px;
     align-self: center;
-    justify-self: end;
     color: rgb(0, 0, 0);
-    margin-top: 5%;
+    margin-bottom: 8px;
 }
+
 
 .mainFormDiv {
     display: flex;
