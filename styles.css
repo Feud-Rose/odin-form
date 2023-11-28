@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
 
-
+html {
+    background-color: rgba(10, 10, 58, 0.1);
+}
 body {
     font-family: 'Cabin', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
+    
 }
 
 .sideDiv {
@@ -22,20 +25,21 @@ body {
 }
 
 .sideBackFilter{
-    background-color: rgba(0, 0, 0, 0.15);
+    margin-top: 20%;
+    margin-bottom: auto;
+    background-color: rgba(0, 0, 0, 0.35);
     display: flex;
-    flex-direction: column;
     min-width: 100%;
-    min-height: 100%
+    min-height: 155px;
+    max-height: 165px;
 }
 
 .sideBackFilter img {
-    margin-top: 20%;
-    margin-bottom: auto;
     align-self: center;
+    margin: auto;
     max-width: 150px;
     max-height: 150px;
-    
+    filter: invert(1);
     
 }
 
@@ -46,6 +50,7 @@ a {
 .sideCredit{
     font-size: 8px;
     align-self: center;
+    justify-self: end;
     color: rgb(0, 0, 0);
     margin-bottom: 8px;
 }
@@ -53,7 +58,93 @@ a {
 
 .mainFormDiv {
     display: flex;
-    background-color: rgba(10, 10, 58, 0.1);
+    
     width: 60%;
     height: 100vh;
+}
+
+
+/* Rightside */
+
+.mainFormDiv {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+h1 {
+    margin-left: 14px;
+    margin-top: 14px;
+    font-size: 12px;
+}
+
+p {
+    font-size: 10px;
+    margin-left: 20px;
+    max-width: 70%;
+}
+h2 {
+    font-size: 10px;
+    min-width: 100%;
+    margin: 2px;
+}
+
+.formBackground {
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.20);
+    display: flex;
+    min-width: 100%;
+    padding: 5px;
+    flex-wrap: wrap;
+    min-height: 120%;
+    flex-direction: column;
+}
+
+.formBackground div {
+   /*  display: inline-flex; */
+    padding: 3px;
+    font-size: 8px;
+    width: 40%;
+    
+    
+}
+label,input{
+    display:flex;
+    flex-direction:column;
+  }
+
+.formEntry div {
+    width: 200%;
+    margin: auto;
+    display: flex;
+}
+
+
+
+label {
+    min-width: 15ch;
+}
+
+.formBackground input{
+    font-size: 8px;
+    margin: auto;
+    align-self: center;
+}
+
+.formEntry {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+
+/* Bot Break */
+
+input[type=submit] {
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.foot {
+    margin-left: 8px;
 }
