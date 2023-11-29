@@ -25,7 +25,7 @@
             </p>
        </div>
        <div class="formDiv">
-           <form action="example.sd" method="get" class="formBody">
+           <form action="" method="get" class="formBody">
                 <div class="formBackground">
                         <div class="inFormHead">
                     <h2>Lets do this!</h2>
@@ -45,15 +45,15 @@
                                 <label for="email">EMAIL&nbsp;*<input type="email" id="email"  name="email" required></label>
                             </div>
                             <div class="phoneDiv">
-                                <label for="phone">PHONE&nbsp;NUMBER<input type="tel" id="phone" name="phone"></label>
+                                <label for="phone">PHONE&nbsp;NUMBER<input type="tel" id="phone" name="phone" pattern="[0-9]{9,20}"></label>
                             </div>
                         </div>
                         <div class="form3">
                             <div class="passwordDiv">
-                                <label for="password1" class="password">PASSWORD&nbsp;*<input type="password" id="password1" name="password1" required></label>
+                                <label for="password1" class="password">PASSWORD&nbsp;*<input type="password" id="password1" name="password1" pattern="([A-z0-9]){8,16}" required></label>
                             </div>
                             <div class="passwordDiv">
-                                <label for="password2" class="password">CONFIRM&nbsp;PASSWORD&nbsp;*<input type="password" name="password1" id="password2" required></label>
+                                <label for="password2" class="password">CONFIRM&nbsp;PASSWORD&nbsp;*<input type="password" name="password1" id="password2" pattern="([A-z0-9]){8,16}" required></label>
                             </div>
                         </div>
                     <div>* Indicates a required field</div>
@@ -61,7 +61,7 @@
             
 
                 </div>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Create Account">
                 <p class="foot">
                     Already have an account? <a href="example.com/path" class="logIn">Log In.</a>
                 </p>

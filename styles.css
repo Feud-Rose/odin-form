@@ -138,13 +138,49 @@ label {
     width: auto;
 }
 
+input:focus {
+    outline: none; 
+    border-color: rgb(65, 121, 139);
+    border-width: 1px;
+}
+
+input:valid {
+    border-width: 1px;
+    background-color: rgb(232, 240, 254);
+    border-color: rgb(21, 48, 21);
+}
+
+input:required:invalid, input:focus:invalid {
+   outline: none; 
+   border-color: red;
+   border-width: 1px;
+}
+
+
+input[type=text]:focus, input[type=email]:focus, input[type=number]:focus {
+    
+}
+
+
 
 /* Bot Break */
 
 input[type=submit] {
     margin-top: 10px;
     margin-left: 8px;
-}
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.20);
+    font-weight: bold;
+    
+  }
+
 .foot {
     margin-left: 8px;
 }
+  input[type=submit]:hover {
+    background-color: lightgray;
+  }
+  
+  input[type=submit]:active {
+    background-color: darkgray;
+  }
